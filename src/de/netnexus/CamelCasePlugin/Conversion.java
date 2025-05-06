@@ -5,6 +5,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -40,7 +41,7 @@ class Conversion {
         int idxObjectCase = ConversionList.indexOf(target);
         int repeatedTimes = (idxObjectCase + ConversionList.size() - idxCurrent) % ConversionList.size();
 
-        while (iterations++ <= repeatedTimes) {
+        while (iterations++ < repeatedTimes) {
             switch (ConversionList.get(idxCurrent)) {
                 // snake_case to space case
                 case CONVERSION_LOWER_SNAKE_CASE -> text = text.replace('_', ' ');
