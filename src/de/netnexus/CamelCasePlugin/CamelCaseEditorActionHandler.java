@@ -108,7 +108,7 @@ public class CamelCaseEditorActionHandler<T> extends EditorActionHandler {
             boolean moveRight = true;
             Pattern p = Pattern.compile("[^A-Za-z0-9.\\-]");
 
-            // 左移找词边界
+            // move caret left
             while (moveLeft && start > 0) {
                 start--;
                 caret.setSelection(start, end);
@@ -119,7 +119,7 @@ public class CamelCaseEditorActionHandler<T> extends EditorActionHandler {
                 }
             }
 
-            // 右移找词边界
+            // move caret right
             while (moveRight && end < editor.getDocument().getTextLength()) {
                 end++;
                 caret.setSelection(start, end);
