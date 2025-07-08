@@ -137,7 +137,7 @@ class Conversion {
             return CONVERSION_LOWER_SNAKE_CASE;
         } else if (isLowerCase && text.contains(" ")) {
             return CONVERSION_SPACE_CASE;
-        } else if (isUpperCase(text.charAt(0)) && isLowerCase(text.charAt(1)) && text.contains(" ")) {
+        } else if (isUpperCase(text.charAt(0)) && text.contains(" ")) {
             return CONVERSION_PASCAL_CASE_SPACE;
         } else if (isLowerCase && text.contains("-") || (isLowerCase && !text.contains(" "))) {
             return CONVERSION_KEBAB_CASE;
