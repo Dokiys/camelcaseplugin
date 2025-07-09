@@ -1,4 +1,4 @@
-![录屏2025-07-09-10 34 25](https://github.com/user-attachments/assets/2ad27c61-cefb-43a0-ab21-2692788fe90e)# Camel Case Plugin
+# Camel Case Plugin
 CamelCasePlugin for IntelliJ IDEs (e.g. PhpStorm, IntelliJ IDEA, ...)
 
 Switch easily between kebab-case, SNAKE_CASE, PascalCase, camelCase, snake_case or space case. See Edit menu or use ⇧ + ⌥ + U / Shift + Alt + U.
